@@ -1,7 +1,12 @@
 function reverseMyName(str) {
     // put your code here
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
 
-    return str
+    // return kata
 }
 
 const Test = (fun, result) => console.log(reverseMyName(fun) === result)
